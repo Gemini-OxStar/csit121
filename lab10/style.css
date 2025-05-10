@@ -1,0 +1,66 @@
+/* General Reset */
+body, h1, h2, h3, p, header, footer, nav {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #ea6c05;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+h1 {
+    background: purple;
+    color: #ea6c05;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation Bar Styles */
+nav {
+    background: #0508b9;
+    color: #ea6c05;;
+    text-decoration: underline;
+}
+nav a{
+    color: #ea6c05;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+nav ul {
+    list-style: non;
+    display: flex;
+    justify-content: center;
+}
+
+a:hover {
+    color: purple;
+    border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+    background: #0508b9;
+    color: #ea6c05;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+ul{
+    margin: 5px;
+    font-size: 20px;
+    padding: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
