@@ -1,0 +1,77 @@
+<!DOCTYPE html>  
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experiences With Web Standards</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style> 
+    img{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+        float: center;
+    }
+img:hover{ 
+   animation: pulse 1s infinite; 
+}
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="finalproject.html">Opening</a></li>
+             <li><a href="fp2.html">HTML</a></li>
+            <li><a href="fp3.html">CSS</a></li>
+            <li><a href="fp4.html">Javascript&XML</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>CSS</h1>
+        <p>I couldn't believe the steep learning curve that I would encounter with this. Applying basic colors to text,
+   the background, along with adjusting text sizes and decorations was simple enough to comprehend.
+The real pain for me was inserting images and applying animations. The former was especially killing me since I feel that
+it should've been so simple. I thought it was simply copy the image file and paste it into the HTML where images go; turns out that wasn't the
+case at all. I'll use the table below to showcase how to properly insert an image from a folder within the same folfer as your file. </p>
+        <table>
+<tr>
+    <thead>
+    <th> Code</th>
+    <th> Correct?</th>
+    <th> Explanation</th>
+</tr>
+    </thead>
+            <tbody>
+                    <tr>
+                <td> finallab/pictures/matrix.jpg </td>
+                <td> No </td>
+                <td> The image won't show up in this file if you do this. The HTML will think you are trying
+                    to call an image from an external folder. </td>
+                    </tr>
+
+                    <tr>
+                        <td> pictures/matrix.jpg </td>
+                        <td> Yes </td>
+                        <td> This is the correct way to do it. The HTML will look for the image in the same folder as this file. </td>
+                    </tr>
+
+            </tbody>
+        </table>
+    <h2> Link To My Breakthrough</h2>
+    <p> Ironically, it was the seventh lab assignment where I finally managed to figure out how to implement images into HTMLs.</p>
+    <img src="pictures/lab8.png" alt="Lab 8 Screenshot" width="500px" height="300px">
+    </main>
+    <footer>
+        <p>&copy; 2025 CCBC Student</p>
+    </footer>
+</body>
+
+</html>
