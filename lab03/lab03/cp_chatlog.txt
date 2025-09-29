@@ -1,0 +1,44 @@
+GitHub Copilot Chat Log (September 28, 2025)
+
+Q: I forgot how to create an internal style within an HTML.
+A: You need to set up GitHub Copilot and be signed in to use Chat.
+
+Q: How do I get a rounded box to appear around my lists?
+A: You need to set up GitHub Copilot and be signed in to use Chat.
+
+Q: k
+A: To create a rounded box around your lists, use the following CSS properties on your ul and ol selectors:
+ul, ol{ 
+  border: 3px solid #a88109;       
+  border-radius: 10px;             
+  padding: 15px;                   
+  width: fit-content;              
+}
+
+Q: I want the unordered lists to be centered, but I evidently have no idea what I'm doing. I didn't see a center option for "float" and the "padding" option wasn't giving me what I want,either. Please advise.
+A: To center your unordered lists (ul), use margin-left: auto; margin-right: auto; and set a width. Example:
+ul { 
+  border: 3px solid #a88109;       
+  border-radius: 10px;          
+  padding: 15px;                
+  width: 60%;                   
+  margin-left: auto;            
+  margin-right: auto;           
+  display: block;               
+}
+
+Q: Give me some advice for creating text shadow.
+A: To create a text shadow in CSS, use the text-shadow property. Example:
+selector {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+Q: Am I suppose to type DOCTYPE on the top of a CSS stylesheet
+A: No, you should not type <!DOCTYPE> at the top of a CSS stylesheet.
+The <!DOCTYPE html> declaration is only for HTML files. CSS files should start directly with your CSS code.
+
+Q: Can I have a log of our chat to email to my teacher to show what I consulted you for?
+A: Certainly! Here’s a log of your chat with GitHub Copilot that you can email to your teacher.
+
+Q: Actually, I think I need the chat log as a URL or some kind of file that I can paste into a submission line. I cannot submit images.
+A: You can copy and paste the chat log above into a text file or submit it as plain text.
