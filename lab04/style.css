@@ -1,0 +1,67 @@
+body{
+background-color: rgba(232, 227, 194, 0.5); /* semi-transparent background */
+font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+background-image: url("images/oreoCheesecake.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+}
+
+body::before{
+content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(232, 227, 194, 0.5); /* Adjust alpha for more/less transparency */
+  pointer-events: none; /* Allows clicks through overlay */
+  z-index: 0;
+}
+
+header, main, footer, nav, h1, h2, h3, p{
+z-index: 1;
+position: relative;
+color: #3e3d34;
+}
+
+h1, h2, h3{
+text-align: center;
+color: #3e3d34;
+text-decoration: underline;
+}
+
+nav, div{
+text-align: center;
+border-style:solid;
+border-width: 6px;
+border-color: #e3c2e8;
+background-color: #c2e8c5;
+}
+
+a{
+text-decoration: none;
+color: #e3c2e8;
+}
+
+
+a:hover{
+text-decoration: underline;
+color: #93907b;
+font-weight: bold;
+}
+
+a:visited{
+color: #040d4d;
+font-weight: bold;
+text-decoration: underline;
+}
+
+
+img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+border-style: solid;
+}
