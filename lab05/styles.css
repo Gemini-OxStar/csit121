@@ -1,0 +1,142 @@
+
+
+/*Background color elements */
+html{
+background-color: #09a832;
+padding: 5px;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header Elements */
+header{
+text-align: center;
+background-size: auto;
+}
+
+/* Heading Elements */
+h1, h2, h3, h4{
+text-shadow: #000000 2px 2px 3px;;
+text-align: center;
+color:#092fa8;
+font-family: "bbh-sans-hegarty-regular", sans-serif;
+}
+
+/* Paragraph and Other Body Elements */
+
+li{
+margin-bottom: 10px;
+margin-left: 10px;
+line-height: 1.5;
+font-size: 16px;
+}
+
+ul, ol{ 
+  border: 3px solid #a88109;       
+  border-radius: 10px;          
+  padding: 15px;                
+  width: fit-content;  
+  box-shadow: 2px 2px 4px#000000;         
+}
+
+ul{
+    margin-left: auto;            
+    margin-right: auto;           
+}
+
+footer{
+color:#092fa8;
+background-color: #a88109;
+background-size: auto;
+font-size: medium;
+}
+
+nav{
+text-align: center;
+margin-bottom: 15px;
+}
+
+/*Styles for the links */
+a{
+   text-decoration: none;
+color:#000000;
+font-weight: bold;
+}
+
+a:hover{
+ text-decoration: underline;   
+color: #a88109;
+font-weight:bolder
+}
+
+.bbh-sans-hegarty-regular {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+a:visited{
+text-decoration: underline;
+color: #092fa8;
+}
+
+/* Mobile Layout */
+@media screen and (min-width: 600px) {
+    body{
+    margin: auto;
+    max-width: 80%;
+font-size: 8px;
+    }
+    
+footer{
+font-size: 5px;
+text-align: left;
+
+}
+
+
+
+
+}
+
+
+
+/* Desktop Layout */
+
+ @media (min-width: 1024px) {
+    body{
+    margin: auto; 
+    font-size: 14px;
+    }
+
+#wrapper {
+        width: 95%;
+        margin: auto;
+        max-width: 1200px;
+        display: grid;
+        grid-template-rows: 1fr 320px; 
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header header "
+          "main aside"
+          "footer footer";
+      gap: 20px;
+      }
+header {
+        grid-area: header;
+      }
+main{
+        grid-area: main;
+      }
+
+ aside{
+        grid-area: aside;
+      
+      } 
+      
+footer {
+        grid-area: footer;
+        font-size: 12px;
+        text-align: center;
+      }
+ }
