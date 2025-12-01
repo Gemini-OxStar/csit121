@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usefulness</title>
+        <link rel="stylesheet" href="art.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="important.html">Important Standards</a></li>
+                <li><a href="utility.html" class="active">Utility Standards</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    <h1>How is BSL Used?</h1>
+        <p> <i>Published by Timothy Kluver on November 30, 2025.</i></p>
+    </header>
+
+    <section>
+        <h2>BitstringStatusListEntry</h2>
+        <p>
+            Issuers can add a <i>credentialStatus</i> property to enable status info for a 
+            Verifiable Credential (VC). Such properties include id, type, statusPurpose, statusList Index, statusSize, and many more.
+            Status list entries can be used to express the purpose of a status associated with a verifiable credential by using the <i>statusPurpose</i>
+            property. Using <i>revocation</i> or <i>suspension</i> as the status purpose expresses whether a VC has been revoked
+            or suspended, respectively. Using <i>message</i> as the status purpose enables an issuer to 
+            define a number of custom, descriptive messages about the status of the verifiable credential.
+    </section>
+    <br>
+
+    <section>
+        <h2>How Bitstring Status List Credential Functions</h2>
+        <p>
+            Any credential intended to be revocable includes in its credentialStatus field a reference to
+            the URL of theh status list (accessed with <i>statusListCredential</i>) and the index it occupies in the bitstring (found with <i>statusListIndex</i>).
+            To check the status of a credential, one would retrieve the status list credential from the URL specified in the <i>statusListCredential</i> field.
+            Next, you would download the <i>statusListCredential</i> resource (Ex: /credentials/status/1).
+            Then, decode the bitstring found in the <i>encodedList</i> field of the status list credential. This <i>encodesList</i> holds a 16KB binary string that is compressed with GZIP and 
+            encoded in Base64URL. Bits that are 0 are marked as valid; those marked with 1 are to be revoked or suspended. FInaly, you can read the bit status at <i>statusListIndex</i>.
+        </p>
+    </section>
+    <br>
+    
+    <section>
+    <h2> Use Cases</h2>
+    <p>
+        There are three different ue cases for Bitstring Status List. First, M2M Revocation. Automatic agents or machines
+        with delegated credentials can be easily revoked when the mandate ends.
+        Second, temprary acces. BSL is useful in platforms with time-limited passes or event-based credentials. Finally, legal compliance.
+        Traceability can be enables in accordsnce with frameworks like AML or eIDAS 2.0 without compromising privacy.
+    </p>
+</section>
+
+ <footer> <p>&copy; 2025 Enigma Studios CSIT 121. All rights reserved</p></footer>       
+
+
+</body>
+</html>

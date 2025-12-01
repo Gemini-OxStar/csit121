@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Important?</title>
+        <link rel="stylesheet" href="art.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="important.html" class="active">Important Standards</a></li>
+                <li><a href="utility.html">Utility Standards</a></li>
+                <li><a href="sources.html">Sources</a></li>
+            </ul>
+        </nav>
+    <h1>Why Is BSL Important?</h1>
+    <p> <i>Published by Timothy Kluver on November 30, 2025.</i></p>
+    </header>
+            <p> So what is it that makes Bitstring Status List so important? BSL provides a way to track 
+        credential status changes while preserving privacy. Such status types include revocation, suspension, and refresh.
+        In traditional systems, checking the status of a credential often involves querying a centralized database. This has the risk
+        of exposing the holder's identity and driving up bandwidth cost. Like I said on the previous page, BSL addresses these issues by using compressed bitstrings to represent the status of multiple credentials.
+        Thus, one can check credential statuses without revealing which particular credentials are being checked.
+            </p>
+    <br>
+    <p>
+        In addition to being private, BSL is also scalable. This is becuase it uses a compact bitstring format.
+        One signed credential represents the status of 130k credentials. Also, the format is highly compressible, capable of supporting higher
+        than 90% compression ratios in most cases.
+    </p>
+    <br>
+    
+    <p>Another thing about BSL is that it has faster querying. Statuses are endoded as bitstrings with BSL. This allows one to
+        perform a direct index-styled lookup rather than having to scan large datasets. A simple HTTP GET and bitwise operation is all you need with Bitstring Status List. 
+    </p>
+    <br>
+
+
+
+ <footer> <p>&copy; 2025 Enigma Studios CSIT 121. All rights reserved</p></footer>       
+
+</body>
+</html>

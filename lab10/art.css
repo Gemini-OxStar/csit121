@@ -1,0 +1,86 @@
+html{
+background-color:rgba(255, 255, 255, 1);
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image: url("images/bitstring.jpg");
+background-repeat: repeat;
+}
+
+html::before{
+content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.76); /* Adjust alpha for more/less transparency */
+  pointer-events: none; /* Allows clicks through overlay */
+  z-index: 0;
+}
+
+h1, h2, body, section, nav, ul, footer, p{
+z-index: 1;
+position: relative;
+color: rgb(9, 32, 201)
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+h2{
+    text-align: left;
+    font-size: 24px;
+}
+
+body, section{
+    padding: 10px;
+    line-height: 1.3;
+    font-size: 16px;
+}
+
+.navigation{
+    background-color: #d3d3d3;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.source-list{
+list-style-type: square;
+border: 2px solid black;
+border-radius: 10px;
+background-color: #d3d3d3;
+line-height: 1.5;
+}
+
+
+a{
+text-decoration: underline dotted;
+color: rgb(9, 32, 201);
+}
+
+a:hover{
+    font-weight: bold;
+    color: red;
+    text-decoration: underline dotted;
+}
+
+nav a.active{
+  color: #ff0101;
+  font-weight: bolder;
+  text-decoration: underline solid;
+}
+
+a:visited{
+    color: purple;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+i, u{
+    color: purple;
+}
