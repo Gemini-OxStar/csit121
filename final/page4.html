@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Information</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/Favicon.png" type="image/png">
+</head>
+<body>
+   <header>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <h1>Our Store Locations</h1>
+    <img src="compimg/Bean and Bloom-tranparent.png" class="icon" alt="Company Logo">
+    <aside class="sidenav" id="mySideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="intro.html">Intro</a></li>
+            <li><a href="page2.html">Menu</a></li>
+            <li><a href="page3.html">Events</a></li>
+            <li><a href="page4.html" class="active">Contact & Locations</a></li>
+        </ul>
+    </aside>
+</header>
+
+<script>
+function openNav() {
+  document.getElementById("mySideNav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySideNav").style.width = "0";
+}
+</script>
+
+    <section>
+<p class ="open"> As of now, we have three cafes open across the U.S.</p>
+        <table>
+            <tr>
+                <th>Cafe Interior</th>
+                <th>Location</th>
+                <th>Hours Open</th>
+                <th>Phone #</th>
+            </tr>
+
+            <tr>
+                <td><img src="images/Cafe1.jpeg" class ="int" alt="Cafe 1"></td>
+                <td>21339 Ebenezer Road, Middle River, MD</td>
+                <td>Mon-Fri 8:30AM-3PM</td>
+                <td>443-912-0569</td>
+            </tr>
+
+            <tr>
+                <td><img src="images/Cafe2.jpg" class ="int" alt="Cafe 2"></td>
+                <td>0064 Rainbow Road Drive, Boston, Massachusetts</td>
+                <td>Mon-Fri 8:30AM-3PM</td>
+                <td> 812-065-4451</td>
+            </tr>
+
+            <tr>
+                <td><img src="images/Cafe3.jpg" class ="int" alt="Cafe 3"></td>
+                <td>10273 Big Ben Avenue,Long Island, New York </td>
+                <td>Mon-Fri 8:30AM-3PM</td>
+                <td>512-619-2677</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section>
+        <h3 class="ftitle">Contact Form</h3>
+        <p> If you have any questions or concerns regarding events, career opportunities, or anything else, <br>please call your local cafe during active hourse or use the contact form below.</p>
+
+        <form method="POST"></form>
+        <fieldset>
+ <label for="myName">Name:</label>
+    <input type="text" name="myName" id="myName" required placeholder="John Dough"> <br><br>
+
+<label for="myEmail">E-Mail:</label>
+ <input type="email" name="myEmail" id="myEmail" required placeholder="jD0@example.net"> <br><br>
+
+ <label for="comments">Comments:</label>
+ <br>
+            <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+                 <br><br>
+
+        </fieldset>
+    </section>
+    <p class = "farewell">We hope to see you stop by for a cup real soon!</p>
+<footer>
+    <p>&copy; 2025 Enigma Studios CSIT 121. All rights reserved</p>
+</footer>    
+</body>
+</html>

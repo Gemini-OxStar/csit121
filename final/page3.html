@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/Favicon.png" type="image/png">
+</head>
+
+<body>
+<header>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <h1>Bean and Bloom</h1>
+    <img src="compimg/Bean and Bloom-tranparent.png" class="icon" alt="Company Logo">
+
+    <aside class="sidenav" id="mySideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul>
+            <li><a href="intro.html" >Intro</a></li>
+            <li><a href="page2.html">Menu</a></li>
+            <li><a href="page3.html" class="active">Events</a></li>
+            <li><a href="page4.html">Contact & Locations</a></li>
+        </ul>
+    </aside>
+</header>
+
+<script>
+function openNav() {
+  document.getElementById("mySideNav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySideNav").style.width = "0";
+}
+</script>
+
+<main>  
+    
+    <p>December 15th: Bingo at the Boston location from noon to 2pm. Consider dropping in!</p>
+    
+    <p>December 20th: Musical performers serenade the cafe with christmas melodies from 12 noon to 2 pm at the White Marsh location.</p>
+
+</main>
+
+ <footer>
+    <p>&copy; 2025 Enigma Studios CSIT 121. All rights reserved</p>
+</footer>   
+</body>
+</html>

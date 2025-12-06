@@ -1,0 +1,323 @@
+html{
+    font-family:'Courier New', Courier, monospace;
+    background-image: url("images/coffee-and-croissant.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    background-position: center;
+    color: rgba(37, 52, 46, 1);
+}
+
+html::before{
+    content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(222, 169, 158, 0.82); /* Adjust alpha for more/less transparency */
+  pointer-events: none; /* Allows clicks through overlay */
+  z-index: -1;
+}
+
+h1, h2, h3, p, main, section, aside, footer {
+    z-index: 1;
+    position: relative;
+}
+
+h1, h2, h3{
+text-align: center;
+background-color: #9edec3;
+border: 2px dotted #9eacde;
+margin: 1rem auto;
+max-width: 720px;
+padding: 0.25rem 0.5rem;
+}
+
+.farewell{
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+background-color: #9edec3;
+border: 2px dotted #9eacde;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: relative;
+}
+
+header h1{
+    flex: 1 1 auto;
+    min-width: 200px;
+    margin: 0;
+}
+
+header .icon{
+    order: -1;
+}
+
+header span{
+    position: absolute;
+    left: 20px;
+}
+
+
+/* Styles for the menu on page2 */
+.seg1{
+    text-align: center;
+}
+
+.seg2{
+    text-align: center;
+    
+}
+
+.seg3{
+    text-align: center;
+}
+
+.menu {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 5px solid #9edec3;
+  background-color: #9eacde ;
+}
+
+.menu-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+/* Applying flexboxes to the menu */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.item-name {
+  flex: 1;
+}
+
+.item-price {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+/* Sidenav CSS */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #9edec3;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(37, 52, 46, 1);
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(37, 52, 46, 1) ;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  font-weight: bold;
+  text-decoration: underline solid 2px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border-bottom: none;
+}
+
+.sidenav a.active{
+background-color:#9eacde;
+color: white;
+text-decoration: underline solid 2px;
+font-weight: bold;
+}
+
+/* Styles for Table on Locations and Hours on Page4 */
+table, td, th{
+border:rgba(37, 52, 46, 1) 3px solid;
+border-collapse: collapse;
+background-color: #9edec3;
+text-align: center;
+margin: 0 auto;
+}
+
+th{
+background-color:#9eacde
+
+}
+
+.int{
+height: 1.5in;
+width: auto;
+
+}
+
+/* Form Styles */
+
+fieldset{
+    background-color:#9edec3;
+    border: 3px solid #9eacde;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+.ftitle{
+    background-color: #9eacde;
+    border:rgba(37, 52, 46, 1) 1px solid;
+}
+
+/* Icon in the top-right corner */
+
+.icon{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    max-width: 100px;
+    height: auto;
+    opacity: 0.7;
+    z-index: 100;
+}
+
+/* phone screen media-query */
+@media (max-width: 600px) {
+  .menu {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .menu-title {
+    font-size: 1.5em;
+  }
+
+  .menu-item {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start;
+  }
+
+  .item-price {
+    margin: 5px 0 0 0;
+    font-weight: bold;
+  }
+  html{
+    font-size: 14px;
+  }
+  h1, h2, h3{
+    margin-left: 5%;
+    margin-left: 5%;
+    font-size: 1.1em;
+  }
+
+   .icon{
+    max-width: 70px;
+    top: 8px;
+    right: 8px;
+    opacity: 0.85;
+  }
+
+  fieldset{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    box-sizing: border-box;
+  }
+  .ftitle{
+    display: block;
+    padding: 6px 10px;
+  }
+
+  img, .int{
+    max-width: 100%;
+    height: auto;
+  }
+
+  main, section{
+    padding: 12px 6%;
+  }
+
+  main p, section p{
+    column-count: 1;
+    line-height: 1.5;
+  }
+}
+
+/* Desktop media query*/
+@media (min-width: 900px){
+
+    main{
+        max-width: 1100px;
+        margin: 28px auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+    .col-left, .col-right{
+        padding: 0 15px;
+    }
+
+    .col-left p, .col-right p, section p{
+        column-count: 2;
+        column-gap: 2rem;
+    }
+
+    main p, main > div, section p{
+                 column-count: 2;
+                 column-gap: 2rem;
+    }
+
+    .icon{
+        max-width: 120px;
+        top: 12px;
+        right: 12px;
+        opacity: 0.7;
+        z-index: 100;
+    }
+
+    .sidenav{
+        z-index: 9999;
+    }
+
+    header{
+        padding: 1.5rem;
+        gap: 30px;
+    }
+
+    header h1{
+        max-width: 600px;
+        flex: 0 1 auto;
+    }
+}
